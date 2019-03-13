@@ -1,0 +1,117 @@
+/************************************************Basic Structure Styling************************************************/
+body{
+	margin: auto;
+	color: white;
+	line-height: 30px;
+	font-family: calibri;	
+	padding-bottom: 10px;
+	background-color: #7a1f1f;
+}
+
+.systemName{
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 3px;
+}
+
+.container{
+	width: 95%;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+	.sub-container{
+		width: 80%;
+		margin: auto;
+		clear: both;
+		overflow: hidden;
+	}
+
+/************************************************Sub-Container Content Styling********************************************/	
+		.sub-container h1{
+			font-weight: normal;
+			letter-spacing: 3px;
+			text-align: right;
+			background-color: black;
+		}
+		
+		.sub-container:nth-child(even) h1{
+			text-align: left;
+		}
+		
+		.sub-container img{
+			width: 300px;
+			height: 300px;
+			padding-right: 10px;
+		}
+		
+		.floatLeft{
+			float: left;
+			overflow: hidden;
+			margin-top: 20px;
+		}
+		
+		.floatRight{
+			float: right;
+			overflow: hidden;
+			margin-top: 20px;
+			padding-left: 10px;
+		}
+		
+		.sub-container p{
+			text-align: justify;
+		}
+		
+		.sub-container ul{
+			column-count: 2;
+		}
+		
+			.sub-container .sub-container{
+				display: block;
+				margin: auto;
+				width: 100%;
+				padding-top: 10px;
+				padding-bottom: 5px;
+			}
+			
+			.sub-container .sub-container img{
+				width: 240px;
+				height: 240px;
+				display: inline-block;
+			}
+
+/***********************************************RESPONSIVE DESIGN************************************************/			
+
+/*****For mobile phones:*****/
+@media only screen and (max-width:500px) {
+	body{
+		width: 100%;
+		font-size: 15px;
+	}
+	
+	.container, .sub-container{
+		display: block;
+	}
+	
+		.sub-container img{
+			display: block;
+			margin: auto;
+			width: 100%
+		}
+			.sub-container .sub-container img{
+				display: block;
+				margin: auto;
+				width: 100%;
+				padding-top: 10px;
+				padding-bottom: 5px;
+			}
+			
+			.sub-container, .sub-container .sub-container{
+				display: block;
+				margin: auto;
+			}
+
+}

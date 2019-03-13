@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index Template</title>
+		<meta charset="UTF-8">
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="styleSheet.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+	</head>
+<body>
+	<img src="Images/logo.png" alt="logo" id="logo">
+	
+	<!--Container with info about the application-->
+	<div class="container" id="about">
+		<h1>ABOUT</h1>
+		<p>
+			Overview Info About The Application
+		</p>
+		<p id="updateInfo">Date Application Was Last Updated</p>
+	</div>
+	
+	<!--Container with a search engine-->
+	<div class="container">
+		<input type="text" id="search" onkeyup="searchDevices()" placeholder="Search Devices...">
+	</div>
+	
+	<!--Collection of applications-->
+	<div class="container" id="devices">
+		List Of Applications
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gamer Tech</title>
+		<meta charset="UTF-8">
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="styleSheet.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+	</head>
+<body>
+	<img src="Images/logo.png" alt="logo" id="logo">
+	
+	<!--Container with info about the application-->
+	<div class="container" id="about">
+		<h1>ABOUT</h1>
+		<p>
+			Continuous growth of the games development industry has produced various 
+			technology allowing many people to experience gaming for themselves. 
+			Technology within these developed devices have enabled a gaming experience 
+			in various forms e.g. 2D, 3D, VR etc. Currently, our application has 
+			analysed the Nintendo Switch and overtime, will analyse other systems 
+			whilst aiming to demonstrate how they&apos;re functionality enables an experience 
+			into gaming.
+		</p>
+		<p id="updateInfo">Last Updated: 13<sup>th</sup> March 2019</p>
+	</div>
+	
+	<!--Container with a search engine-->
+	<div class="container">
+		<input type="text" id="search" onkeyup="searchDevices()" placeholder="Search Devices...">
+	</div>
+	
+	<!--Collection of applications-->
+	<div class="container" id="devices">
+		<ul id="gaming-systems">
+			<li><a onclick="maintenanceMessage()"><img src="Images/nintendo-wii.jpeg" alt="nintendo-wii"> <h1>Nintendo Wii</h1> </a></li>
+			<li><a href="nintendoSwitch.html" target="blank"><img src="Images/nintendo-switch.png" alt="nintendo-switch"><h1>Nintendo Switch</h1></a></li>
+			<li><a onclick="maintenanceMessage()"><img src="Images/playstation-vr.jpeg" alt="playstation-vr"> <h1>PlayStation VR</h1> </a></li>
+		</ul>
+	</div>
+
+</body>
+</html>
